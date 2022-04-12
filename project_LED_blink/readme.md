@@ -43,4 +43,9 @@ Credits: Joseph Holmner "FPGA Blinking Led Tutorial Step by Step [ Altera ]" (ht
 		clk - Input - PIN_31
 		led - Output - PIN_98
 
-![Alt text](/project_LED_blink/CoreEP3C16-Schematic_screenshot.png)
+![Alt text](/project_LED_blink/assets/CoreEP3C16-Schematic_screenshot.png)
+
+
+DEMO
+
+![Alt text](/project_LED_blink/assets/demo.gif)
