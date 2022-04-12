@@ -1,4 +1,4 @@
-Credits: Joseph Holmner "FPGA Blinking Led Tutorial Step by Step [ Altera ]" (https://www.youtube.com/watch?v=JJ3XkNcLdx8)
+Credits: Josef Holmner "FPGA Blinking Led Tutorial Step by Step [ Altera ]" (https://www.youtube.com/watch?v=JJ3XkNcLdx8)
 
 # Steps
 
