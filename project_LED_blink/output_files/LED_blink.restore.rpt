@@ -1,0 +1,74 @@
+Restore Archived Project report for LED_blink
+Tue Apr 12 17:31:25 2022
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Tue Apr 12 17:31:25 2022 ;
+; Revision Name                   ; LED_blink                             ;
+; Top-level Entity Name           ; LED_blink                             ;
+; Family                          ; Cyclone III                           ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/altera/13.1/LED_blink_tmp_archive.qar' into the 'C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink' directory
+Info: Generated report 'LED_blink.restore.rpt'
+
+
++------------------------------------------------------+
+; Files Restored                                       ;
++------------------------------------------------------+
+; File Name                                            ;
++------------------------------------------------------+
+; LED_blink.qpf                                        ;
+; LED_blink.qsf                                        ;
+; LED_blink.vhd                                        ;
+; db/LED_blink.cmp.hdb                                 ;
+; db/LED_blink.db_info                                 ;
+; incremental_db/compiled_partitions/LED_blink.db_info ;
+; quartus/bin64/assignment_defaults.qdf                ;
++------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
