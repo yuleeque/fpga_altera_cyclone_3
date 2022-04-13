@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LED_blink
-Tue Apr 12 17:32:57 2022
+Wed Apr 13 20:57:35 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 12 17:32:57 2022      ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 13 20:57:35 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; LED_blink                                  ;
 ; Top-level Entity Name              ; LED_blink                                  ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 48                                         ;
-;     Total combinational functions  ; 48                                         ;
-;     Dedicated logic registers      ; 27                                         ;
-; Total registers                    ; 27                                         ;
-; Total pins                         ; 2                                          ;
+; Total logic elements               ; 39                                         ;
+;     Total combinational functions  ; 39                                         ;
+;     Dedicated logic registers      ; 24                                         ;
+; Total registers                    ; 24                                         ;
+; Total pins                         ; 5                                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -170,28 +170,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 48        ;
+; Estimated Total logic elements              ; 39        ;
 ;                                             ;           ;
-; Total combinational functions               ; 48        ;
+; Total combinational functions               ; 39        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 8         ;
-;     -- 3 input functions                    ; 0         ;
-;     -- <=2 input functions                  ; 40        ;
+;     -- 4 input functions                    ; 15        ;
+;     -- 3 input functions                    ; 1         ;
+;     -- <=2 input functions                  ; 23        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 23        ;
-;     -- arithmetic mode                      ; 25        ;
+;     -- normal mode                          ; 17        ;
+;     -- arithmetic mode                      ; 22        ;
 ;                                             ;           ;
-; Total registers                             ; 27        ;
-;     -- Dedicated logic registers            ; 27        ;
+; Total registers                             ; 24        ;
+;     -- Dedicated logic registers            ; 24        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 2         ;
+; I/O pins                                    ; 5         ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 27        ;
-; Total fan-out                               ; 168       ;
-; Average fan-out                             ; 2.13      ;
+; Maximum fan-out                             ; 24        ;
+; Total fan-out                               ; 165       ;
+; Average fan-out                             ; 2.26      ;
 +---------------------------------------------+-----------+
 
 
@@ -200,7 +200,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |LED_blink                 ; 48 (48)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |LED_blink          ; work         ;
+; |LED_blink                 ; 39 (39)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |LED_blink          ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -210,7 +210,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 27    ;
+; Total registers                              ; 24    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -235,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Apr 12 17:32:53 2022
+    Info: Processing started: Wed Apr 13 20:57:30 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LED_blink -c LED_blink
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file led_blink.vhd
@@ -245,14 +245,14 @@ Info (12127): Elaborating entity "LED_blink" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 44 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 48 logic cells
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 39 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4653 megabytes
-    Info: Processing ended: Tue Apr 12 17:32:57 2022
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Processing ended: Wed Apr 13 20:57:35 2022
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 

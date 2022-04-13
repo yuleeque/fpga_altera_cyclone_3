@@ -1,0 +1,18 @@
+Quartus II Archive log --	C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/LED_blink.qarlog
+
+Archive:	C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/LED_blink.qar
+Date:		Tue Apr 12 19:04:49 2022
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/LED_blink.qpf
+C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/LED_blink.qsf
+C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/LED_blink.vhd
+C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/db/LED_blink.cmp.hdb
+C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/db/LED_blink.db_info
+C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/incremental_db/compiled_partitions/LED_blink.db_info
+c:/altera/13.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

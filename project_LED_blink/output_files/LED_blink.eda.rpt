@@ -1,5 +1,5 @@
 EDA Netlist Writer report for LED_blink
-Tue Apr 12 17:33:31 2022
+Wed Apr 13 20:58:18 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Apr 12 17:33:31 2022 ;
+; EDA Netlist Writer Status ; Successful - Wed Apr 13 20:58:18 2022 ;
 ; Revision Name             ; LED_blink                             ;
 ; Top-level Entity Name     ; LED_blink                             ;
 ; Family                    ; Cyclone III                           ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Apr 12 17:33:29 2022
+    Info: Processing started: Wed Apr 13 20:58:16 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off LED_blink -c LED_blink
 Info (204019): Generated file LED_blink_8_1200mv_85c_slow.vho in folder "C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file LED_blink_8_1200mv_0c_slow.vho in folder "C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/simulation/modelsim/" for EDA simulation tool
@@ -100,7 +100,7 @@ Info (204019): Generated file LED_blink_min_1200mv_0c_vhd_fast.sdo in folder "C:
 Info (204019): Generated file LED_blink_vhd.sdo in folder "C:/Users/yulian/Documents/fpga_altera_cyclone_3/project_LED_blink/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4537 megabytes
-    Info: Processing ended: Tue Apr 12 17:33:31 2022
+    Info: Processing ended: Wed Apr 13 20:58:18 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

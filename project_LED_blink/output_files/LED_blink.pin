@@ -160,20 +160,20 @@ GND+                         : 89        :        :                   :         
 GND+                         : 90        :        :                   :         : 3         :                
 GND+                         : 91        :        :                   :         : 4         :                
 GND+                         : 92        :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 93        :        :                   :         : 4         :                
+led_4                        : 93        : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 94        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 95        :        :                   :         : 4         :                
 VCCIO4                       : 96        : power  :                   : 2.5V    : 4         :                
 GND                          : 97        : gnd    :                   :         :           :                
-led                          : 98        : output : 2.5 V             :         : 4         : Y              
+led_3                        : 98        : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 99        :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 100       :        :                   :         : 4         :                
+led_2                        : 100       : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 101       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 102       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 103       :        :                   :         : 4         :                
 VCCIO4                       : 104       : power  :                   : 2.5V    : 4         :                
 GND                          : 105       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 106       :        :                   :         : 4         :                
+led_1                        : 106       : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 107       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 108       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 109       :        :                   :         : 4         :                
