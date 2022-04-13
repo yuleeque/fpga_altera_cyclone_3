@@ -38,10 +38,14 @@ Credits: Josef Holmner "FPGA Blinking Led Tutorial Step by Step [ Altera ]" (htt
 
 3. Processing -> Start -> Analysis & Elaboration
 
-4. Assignments -> Pin Planner
+4. Assignments -> Pin Planner (![OpenEP3C16-SchDoc.pdf](/project_LED_blink/assets/OpenEP3C16-SchDoc.pdf))
 
 		clk - Input - PIN_31
-		led - Output - PIN_98
+		led_1 - Output - PIN_106
+		led_2 - Output - PIN_100
+		led_3 - Output - PIN_98
+		led_4 - Output - PIN_93
+
 
 ![Alt text](/project_LED_blink/assets/CoreEP3C16-Schematic_screenshot.png)
 
