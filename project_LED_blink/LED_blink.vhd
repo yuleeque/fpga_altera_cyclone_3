@@ -12,14 +12,14 @@ end LED_blink;
 
 architecture Behavioral of LED_blink is
 	signal pulse : STD_LOGIC := '0';
-	signal count : integer range 0 to 5000000 := 0;    -- 50000000
+	signal count : integer range 0 to 50000000 := 0;
 	
 	
 begin
 	blink_process : process(clk)
 	begin
 		if clk'event and clk = '1' then
-			if count = 4999999 then
+			if count = 49999999 then
 				count <= 0;
 				pulse <= not pulse;
 			else
