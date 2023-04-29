@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LED_blink
-Wed Apr 13 21:14:12 2022
+Fri Nov 04 12:44:35 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 13 21:14:12 2022      ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 04 12:44:35 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; LED_blink                                  ;
 ; Top-level Entity Name              ; LED_blink                                  ;
@@ -235,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Apr 13 21:14:05 2022
+    Info: Processing started: Fri Nov 04 12:44:31 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LED_blink -c LED_blink
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file led_blink.vhd
@@ -250,9 +250,9 @@ Info (21057): Implemented 53 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 48 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4653 megabytes
-    Info: Processing ended: Wed Apr 13 21:14:12 2022
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4661 megabytes
+    Info: Processing ended: Fri Nov 04 12:44:35 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 
