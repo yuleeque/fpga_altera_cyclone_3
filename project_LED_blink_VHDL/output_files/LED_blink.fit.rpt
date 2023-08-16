@@ -1,5 +1,5 @@
 Fitter report for LED_blink
-Wed Aug 16 11:41:03 2023
+Wed Aug 16 11:48:36 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Wed Aug 16 11:41:03 2023      ;
+; Fitter Status                      ; Successful - Wed Aug 16 11:48:36 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; LED_blink                                  ;
 ; Top-level Entity Name              ; LED_blink                                  ;
@@ -1097,18 +1097,18 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.16 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_VHDL/output_files/LED_blink.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 4948 megabytes
-    Info: Processing ended: Wed Aug 16 11:41:03 2023
-    Info: Elapsed time: 00:00:06
+    Info: Processing ended: Wed Aug 16 11:48:36 2023
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:06
 
 
