@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\yulian\Documents\GitHub_repositories\fpga_altera_cyclone_3\project_LED_blink_Verilog\simulation\modelsim
+vproject_LED_blink
+!i10b 1
+ViPCWf422W9g>?B;e`cBmU3
+r1
+!s85 0
+31
+ILYzV;d2EGNz1ZjEoGhJEY3
+Z1 dC:\Users\yulian\Documents\GitHub_repositories\fpga_altera_cyclone_3\project_LED_blink_Verilog\simulation\modelsim
+w1692541704
+8C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog/project_LED_blink.v
+FC:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog/project_LED_blink.v
+L0 3
+OV;L;10.1d;51
+o-vlog01compat -work work -O0
+nproject_@l@e@d_blink
+!s100 ENbfWTW]iNmPW@^j=dVM[0
+!s108 1692541768.302000
+!s107 C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog/project_LED_blink.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog|-O0|C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog/project_LED_blink.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog -O0

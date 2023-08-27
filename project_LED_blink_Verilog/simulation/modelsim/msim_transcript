@@ -1,0 +1,221 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do project_LED_blink_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog {C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog/project_LED_blink.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module project_LED_blink
+# 
+# Top level modules:
+# 	project_LED_blink
+# 
+vsim work.project_LED_blink
+# vsim work.project_LED_blink 
+# Loading work.project_LED_blink
+add wave -position insertpoint  \
+sim:/project_LED_blink/i_CLK \
+sim:/project_LED_blink/o_LED \
+sim:/project_LED_blink/state \
+sim:/project_LED_blink/counter
+run
+run
+run
+run -all
+run -all
+run -all
+run
+run
+run
+run
+add wave  \
+sim:/project_LED_blink/i_CLK \
+sim:/project_LED_blink/o_LED \
+sim:/project_LED_blink/state \
+sim:/project_LED_blink/counter
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/project_LED_blink/i_CLK
+add wave -position end  sim:/project_LED_blink/o_LED
+add wave -position end  sim:/project_LED_blink/state
+add wave -position end  sim:/project_LED_blink/counter
+run -all
+run
+run
+# Break key hit 
+run -continue
+run -all
+# Break key hit 
+run -all
+vsim rtl_work.project_LED_blink
+# vsim rtl_work.project_LED_blink 
+# Loading rtl_work.project_LED_blink
+add wave -position insertpoint  \
+sim:/project_LED_blink/i_CLK \
+sim:/project_LED_blink/o_LED \
+sim:/project_LED_blink/state \
+sim:/project_LED_blink/counter
+run -all
+run -all
+run -all
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog -O0 C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog/project_LED_blink.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module project_LED_blink
+# 
+# Top level modules:
+# 	project_LED_blink
+vsim -voptargs=+acc rtl_work.project_LED_blink
+# vsim -voptargs=+acc rtl_work.project_LED_blink 
+# Loading rtl_work.project_LED_blink
+# Load canceled
+add wave -position insertpoint sim:/project_LED_blink/*
+run -all
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -work C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog/simulation/modelsim/rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Refreshing module project_LED_blink
+vcom -work C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/project_LED_blink_Verilog/simulation/modelsim/rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Skipping module project_LED_blink
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Refreshing module project_LED_blink
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Skipping module project_LED_blink
+vsim work.project_LED_blink
+# vsim work.project_LED_blink 
+# Loading work.project_LED_blink
+add wave -position insertpoint sim:/project_LED_blink/*
+run
+run
+run
+run
+run
+run
+run -all
+run -all
+run -all
+run -all
+run -all
+run -all
+run -continue
+run -continue
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

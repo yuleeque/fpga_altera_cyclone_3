@@ -1,0 +1,175 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "08/20/2023 20:04:00"
+
+// 
+// Device: Altera EP3C16Q240C8 Package PQFP240
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module project_LED_blink (
+	CLOCK_50,
+	o_LED);
+input 	CLOCK_50;
+output 	[3:0] o_LED;
+
+// Design Ports Information
+// o_LED[0]	=>  Location: PIN_106,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// o_LED[1]	=>  Location: PIN_100,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// o_LED[2]	=>  Location: PIN_98,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// o_LED[3]	=>  Location: PIN_93,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLOCK_50	=>  Location: PIN_34,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("project_LED_blink_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire \o_LED[0]~output_o ;
+wire \o_LED[1]~output_o ;
+wire \o_LED[2]~output_o ;
+wire \o_LED[3]~output_o ;
+wire \CLOCK_50~input_o ;
+wire \state[3]~feeder_combout ;
+wire [3:0] state;
+
+
+// Location: IOOBUF_X30_Y0_N23
+cycloneiii_io_obuf \o_LED[0]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\o_LED[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \o_LED[0]~output .bus_hold = "false";
+defparam \o_LED[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X26_Y0_N16
+cycloneiii_io_obuf \o_LED[1]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\o_LED[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \o_LED[1]~output .bus_hold = "false";
+defparam \o_LED[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X26_Y0_N30
+cycloneiii_io_obuf \o_LED[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\o_LED[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \o_LED[2]~output .bus_hold = "false";
+defparam \o_LED[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y0_N30
+cycloneiii_io_obuf \o_LED[3]~output (
+	.i(!state[3]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\o_LED[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \o_LED[3]~output .bus_hold = "false";
+defparam \o_LED[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y14_N22
+cycloneiii_io_ibuf \CLOCK_50~input (
+	.i(CLOCK_50),
+	.ibar(gnd),
+	.o(\CLOCK_50~input_o ));
+// synopsys translate_off
+defparam \CLOCK_50~input .bus_hold = "false";
+defparam \CLOCK_50~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X7_Y7_N8
+cycloneiii_lcell_comb \state[3]~feeder (
+// Equation(s):
+// \state[3]~feeder_combout  = VCC
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\state[3]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \state[3]~feeder .lut_mask = 16'hFFFF;
+defparam \state[3]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X7_Y7_N9
+dffeas \state[3] (
+	.clk(\CLOCK_50~input_o ),
+	.d(\state[3]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(state[3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state[3] .is_wysiwyg = "true";
+defparam \state[3] .power_up = "low";
+// synopsys translate_on
+
+assign o_LED[0] = \o_LED[0]~output_o ;
+
+assign o_LED[1] = \o_LED[1]~output_o ;
+
+assign o_LED[2] = \o_LED[2]~output_o ;
+
+assign o_LED[3] = \o_LED[3]~output_o ;
+
+endmodule
