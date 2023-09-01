@@ -1,0 +1,52 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\yulian\Documents\GitHub_repositories\fpga_altera_cyclone_3\01_7_seg_display\simulation\modelsim
+Eseven_seg_display
+Z1 w1693566719
+Z2 DPx10 cycloneiii 20 cycloneiii_atom_pack 0 22 ]RlG5R]Q[aFAe9T5<XI<o1
+Z3 DPx10 cycloneiii 21 cycloneiii_components 0 22 czVkNK5?8i<HPTLVSV_3a2
+Z4 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z5 DPx6 altera 11 dffeas_pack 0 22 oY7WPe2I:Taj0>HV`A`AH0
+Z6 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 H[E=U;zSVlD;ca@gnkzIO0
+Z10 dC:\Users\yulian\Documents\GitHub_repositories\fpga_altera_cyclone_3\01_7_seg_display\simulation\modelsim
+Z11 8seven_seg_display_8_1200mv_85c_slow.vho
+Z12 Fseven_seg_display_8_1200mv_85c_slow.vho
+l0
+L36
+VkB<J5M6b8lJmG]o;2S`nF2
+!s100 GRVMVIInBdD>h2CE4kT5:1
+Z13 OV;C;10.1d;51
+31
+!i10b 1
+Z14 !s108 1693566763.031000
+Z15 !s90 -reportprogress|300|-93|-work|work|seven_seg_display_8_1200mv_85c_slow.vho|
+Z16 !s107 seven_seg_display_8_1200mv_85c_slow.vho|
+Z17 o-93 -work work -O0
+Z18 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 17 seven_seg_display 0 22 kB<J5M6b8lJmG]o;2S`nF2
+l153
+L54
+VRJa4`[i37SHbk;TV1ebAP1
+!s100 AcXUP4nl?FM?NKbBJ4WkT1
+R13
+31
+!i10b 1
+R14
+R15
+R16
+R17
+R18

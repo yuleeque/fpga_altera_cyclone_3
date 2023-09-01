@@ -1,6 +1,10 @@
-board: Cyclone III EP3C25Q240C8
+board: 
+    Cyclone III EP3C25Q240C8
 
-tool: Quartus II 13.1.0 Build 162 10/23/2013 SJ Web Edition
+tools: 
+    Quartus II 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    ModelSim ALTERA STARTER EDITION 10.1d
+
 
 
 Peripherals to work with (/assets/Datasheets):

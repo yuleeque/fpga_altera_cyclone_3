@@ -1,0 +1,44 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do seven_seg_display_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_seg_display/seven_seg_display.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg_display
+# -- Compiling architecture Behavioral of seven_seg_display
+# 
+vsim work.seven_seg_display
+# vsim work.seven_seg_display 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.seven_seg_display(behavioral)
+run
+run -continue
+run -all
+step -over
+step -over
+step
+step -over
+add wave -position insertpoint sim:/seven_seg_display/*
+run -all
+run -all
+run -all
+run -all
+run
+run
+run
+run -continue
+run -continue
+run -continue
