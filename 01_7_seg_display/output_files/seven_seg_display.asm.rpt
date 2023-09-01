@@ -1,5 +1,5 @@
 Assembler report for seven_seg_display
-Fri Sep 01 13:19:08 2023
+Fri Sep 01 14:24:41 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Sep 01 13:19:08 2023 ;
+; Assembler Status      ; Successful - Fri Sep 01 14:24:41 2023 ;
 ; Revision Name         ; seven_seg_display                     ;
 ; Top-level Entity Name ; seven_seg_display                     ;
 ; Family                ; Cyclone III                           ;
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                                                                          ;
 +----------------+----------------------------------------------------------------------------------------------------------------------------------+
 ; Device         ; EP3C16Q240C8                                                                                                                     ;
-; JTAG usercode  ; 0x000E579D                                                                                                                       ;
-; Checksum       ; 0x000E579D                                                                                                                       ;
+; JTAG usercode  ; 0x000E5885                                                                                                                       ;
+; Checksum       ; 0x000E5885                                                                                                                       ;
 +----------------+----------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -103,13 +103,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Sep 01 13:19:07 2023
+    Info: Processing started: Fri Sep 01 14:24:40 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off seven_seg_display -c seven_seg_display
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4573 megabytes
-    Info: Processing ended: Fri Sep 01 13:19:08 2023
+    Info: Processing ended: Fri Sep 01 14:24:41 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
