@@ -1,6 +1,6 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_seg_display/seven_seg_display.vhd
-source_file = 1, C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_seg_display/db/seven_seg_display.cbx.xml
+source_file = 1, C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_SEG_DISPLAY/seven_seg_display.vhd
+source_file = 1, C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_SEG_DISPLAY/db/seven_seg_display.cbx.xml
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd

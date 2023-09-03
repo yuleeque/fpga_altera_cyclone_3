@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for seven_seg_display
-Fri Sep 01 14:24:45 2023
+Sun Sep 03 16:06:44 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -500,7 +500,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; led_1     ; clk        ; 9.329 ; 9.104 ; Rise       ; clk             ;
 ; led_2     ; clk        ; 8.990 ; 8.820 ; Rise       ; clk             ;
-; led_3     ; clk        ; 8.817 ; 8.990 ; Rise       ; clk             ;
+; led_3     ; clk        ; 8.990 ; 8.817 ; Rise       ; clk             ;
 ; led_4     ; clk        ; 9.004 ; 8.826 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -512,7 +512,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; led_1     ; clk        ; 9.085 ; 8.865 ; Rise       ; clk             ;
 ; led_2     ; clk        ; 8.758 ; 8.592 ; Rise       ; clk             ;
-; led_3     ; clk        ; 8.589 ; 8.759 ; Rise       ; clk             ;
+; led_3     ; clk        ; 8.759 ; 8.589 ; Rise       ; clk             ;
 ; led_4     ; clk        ; 8.772 ; 8.598 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -903,7 +903,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; led_1     ; clk        ; 8.966 ; 8.515 ; Rise       ; clk             ;
 ; led_2     ; clk        ; 8.633 ; 8.259 ; Rise       ; clk             ;
-; led_3     ; clk        ; 8.256 ; 8.635 ; Rise       ; clk             ;
+; led_3     ; clk        ; 8.635 ; 8.256 ; Rise       ; clk             ;
 ; led_4     ; clk        ; 8.650 ; 8.267 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -915,7 +915,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; led_1     ; clk        ; 8.737 ; 8.302 ; Rise       ; clk             ;
 ; led_2     ; clk        ; 8.418 ; 8.055 ; Rise       ; clk             ;
-; led_3     ; clk        ; 8.053 ; 8.419 ; Rise       ; clk             ;
+; led_3     ; clk        ; 8.419 ; 8.053 ; Rise       ; clk             ;
 ; led_4     ; clk        ; 8.434 ; 8.062 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -1296,7 +1296,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; led_1     ; clk        ; 4.283 ; 4.479 ; Rise       ; clk             ;
 ; led_2     ; clk        ; 4.158 ; 4.329 ; Rise       ; clk             ;
-; led_3     ; clk        ; 4.329 ; 4.158 ; Rise       ; clk             ;
+; led_3     ; clk        ; 4.158 ; 4.329 ; Rise       ; clk             ;
 ; led_4     ; clk        ; 4.175 ; 4.347 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -1308,7 +1308,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; led_1     ; clk        ; 4.177 ; 4.365 ; Rise       ; clk             ;
 ; led_2     ; clk        ; 4.057 ; 4.221 ; Rise       ; clk             ;
-; led_3     ; clk        ; 4.220 ; 4.057 ; Rise       ; clk             ;
+; led_3     ; clk        ; 4.057 ; 4.220 ; Rise       ; clk             ;
 ; led_4     ; clk        ; 4.073 ; 4.238 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -1338,7 +1338,7 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; led_1     ; clk        ; 9.329 ; 9.104 ; Rise       ; clk             ;
 ; led_2     ; clk        ; 8.990 ; 8.820 ; Rise       ; clk             ;
-; led_3     ; clk        ; 8.817 ; 8.990 ; Rise       ; clk             ;
+; led_3     ; clk        ; 8.990 ; 8.817 ; Rise       ; clk             ;
 ; led_4     ; clk        ; 9.004 ; 8.826 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -1350,7 +1350,7 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; led_1     ; clk        ; 4.177 ; 4.365 ; Rise       ; clk             ;
 ; led_2     ; clk        ; 4.057 ; 4.221 ; Rise       ; clk             ;
-; led_3     ; clk        ; 4.220 ; 4.057 ; Rise       ; clk             ;
+; led_3     ; clk        ; 4.057 ; 4.220 ; Rise       ; clk             ;
 ; led_4     ; clk        ; 4.073 ; 4.238 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -1496,7 +1496,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Sep 01 14:24:42 2023
+    Info: Processing started: Sun Sep 03 16:06:42 2023
 Info: Command: quartus_sta seven_seg_display -c seven_seg_display
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -1568,8 +1568,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4617 megabytes
-    Info: Processing ended: Fri Sep 01 14:24:45 2023
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Sun Sep 03 16:06:44 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

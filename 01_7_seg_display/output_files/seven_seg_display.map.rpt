@@ -1,5 +1,5 @@
 Analysis & Synthesis report for seven_seg_display
-Fri Sep 01 14:24:27 2023
+Sun Sep 03 16:06:26 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 01 14:24:27 2023      ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 03 16:06:26 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; seven_seg_display                          ;
 ; Top-level Entity Name              ; seven_seg_display                          ;
@@ -161,7 +161,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                               ; Library ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+---------+
-; seven_seg_display.vhd            ; yes             ; User VHDL File  ; C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_seg_display/seven_seg_display.vhd ;         ;
+; seven_seg_display.vhd            ; yes             ; User VHDL File  ; C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_SEG_DISPLAY/seven_seg_display.vhd ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -235,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Sep 01 14:24:25 2023
+    Info: Processing started: Sun Sep 03 16:06:23 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off seven_seg_display -c seven_seg_display
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file seven_seg_display.vhd
@@ -268,9 +268,9 @@ Info (21057): Implemented 67 device resources after synthesis - the final resour
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 48 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4653 megabytes
-    Info: Processing ended: Fri Sep 01 14:24:27 2023
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4661 megabytes
+    Info: Processing ended: Sun Sep 03 16:06:26 2023
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

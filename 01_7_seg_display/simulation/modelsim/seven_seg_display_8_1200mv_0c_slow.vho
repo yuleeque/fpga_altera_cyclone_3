@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "09/01/2023 14:24:47"
+-- DATE "09/03/2023 16:06:46"
 
 -- 
 -- Device: Altera EP3C16Q240C8 Package PQFP240
@@ -184,7 +184,6 @@ SIGNAL \Equal0~8_combout\ : std_logic;
 SIGNAL \pulse~0_combout\ : std_logic;
 SIGNAL \pulse~q\ : std_logic;
 SIGNAL count : std_logic_vector(25 DOWNTO 0);
-SIGNAL \ALT_INV_pulse~q\ : std_logic;
 
 BEGIN
 
@@ -202,7 +201,6 @@ ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 
 \clk~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \clk~input_o\);
-\ALT_INV_pulse~q\ <= NOT \pulse~q\;
 
 -- Location: IOOBUF_X30_Y0_N23
 \led_1~output\ : cycloneiii_io_obuf
@@ -236,7 +234,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ALT_INV_pulse~q\,
+	i => \pulse~q\,
 	devoe => ww_devoe,
 	o => \led_3~output_o\);
 

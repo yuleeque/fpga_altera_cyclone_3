@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "seven_seg_display")
-  (DATE "09/01/2023 14:24:47")
+  (DATE "09/03/2023 16:06:46")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition")
@@ -61,8 +61,8 @@
     (INSTANCE \\led_3\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (2597:2597:2597) (2694:2694:2694))
-        (IOPATH i o (2426:2426:2426) (2502:2502:2502))
+        (PORT i (2694:2694:2694) (2597:2597:2597))
+        (IOPATH i o (2502:2502:2502) (2426:2426:2426))
       )
     )
   )
