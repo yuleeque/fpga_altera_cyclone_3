@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "09/03/2023 18:20:55"
+-- DATE "09/03/2023 18:23:29"
 
 -- 
 -- Device: Altera EP3C16Q240C8 Package PQFP240
@@ -36,13 +36,13 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	LED_8SEG IS
     PORT (
 	Clock : IN std_logic;
-	led_1 : OUT std_logic;
-	led_2 : OUT std_logic;
-	led_3 : OUT std_logic;
-	led_4 : OUT std_logic;
+	led_1 : BUFFER std_logic;
+	led_2 : BUFFER std_logic;
+	led_3 : BUFFER std_logic;
+	led_4 : BUFFER std_logic;
 	Reset : IN std_logic;
-	LEDout : OUT std_logic_vector(7 DOWNTO 0);
-	LEDindex : OUT std_logic_vector(3 DOWNTO 0)
+	LEDout : BUFFER std_logic_vector(7 DOWNTO 0);
+	LEDindex : BUFFER std_logic_vector(3 DOWNTO 0)
 	);
 END LED_8SEG;
 
