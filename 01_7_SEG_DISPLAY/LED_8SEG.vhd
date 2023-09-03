@@ -15,7 +15,7 @@ entity LED_8SEG is
 			Reset : in std_logic;
 			--clk : in std_logic;
 			LEDout : out std_logic_vector(7 downto 0);
-			LEDindex : out std_logic_vector(3 downto 0));
+			DIGITindex : out std_logic_vector(3 downto 0));
 end LED_8SEG;
 
 
@@ -23,7 +23,7 @@ architecture Behavioral of LED_8SEG is
 	signal pulse : std_logic := '0';
 	signal count : integer range 0 to 50000000 := 0;
 	-- end remove
-	signal symbol : std_logic_vector(3 downto 0);
+	signal Symbol : std_logic_vector(3 downto 0);
 	signal Period_uS, Period_mS, Period_S : std_logic;
 begin
 --	BLINK : process(Clock)
@@ -40,15 +40,14 @@ begin
 
 	BLINK2 : process(Period_S, Clock)
 	begin
-		if (Period_S'event and Period_S = '1') then
+		if( Period_S'event and Period_S = '1' ) then
 			pulse <= not pulse;
 		end if;
 	end process;
-
-	led_1 <= pulse;
-	led_2 <= pulse;
-	led_3 <= pulse;
-	led_4 <= pulse;
+	led_1 <= '1';
+	led_2 <= '1';
+	led_3 <= '1';
+	led_4 <= '1';
 	
 	
 	TIMING : process (Clock, Reset, Period_uS, Period_mS)
@@ -59,10 +58,10 @@ begin
 		variable Count_mS : std_logic_vector(9 downto 0); -- Same idea but this time it's 1000 microseconds. To skip 999 microseconds, we need "11 1110 0111", that's 10-long binary.
 		variable Count_S  : std_logic_vector(9 downto 0);
 	begin
-		if (Reset = '0') then
+		if( Reset = '0' ) then
 			Count_uS := "000000";
-		elsif (Clock'event and  Clock = '1') then
-			if (Count_uS > "110001") then
+		elsif( Clock'event and  Clock = '1' ) then
+			if( Count_uS > "110001" ) then
 				Count_uS := "000000";
 				-- try period update here
 			else
@@ -71,8 +70,8 @@ begin
 			Period_uS <= Count_uS(5);
 		end if;
 		
-		if (Period_uS'event and Period_uS = '1') then
-			if (Count_mS > "1111100111") then 
+		if( Period_uS'event and Period_uS = '1' ) then
+			if( Count_mS > "1111100111" ) then 
 				Count_mS := "0000000000";
 			else
 				Count_mS := Count_mS + 1;
@@ -80,8 +79,8 @@ begin
 			Period_mS <= Count_mS(9);
 		end if;
 		
-		if (Period_mS'event and Period_mS = '1') then
-			if (Count_S > "1111100111") then 
+		if( Period_mS'event and Period_mS = '1' ) then
+			if( Count_S > "1111100111" ) then 
 				Count_S := "0000000000";
 			else
 				Count_S := Count_S + 1;
@@ -92,9 +91,9 @@ begin
 	end process;
 	
 	
-	DECODE : process (symbol)
+	DECODE : process( Symbol )
 	begin
-		case symbol is
+		case Symbol is
 			when "0000"=>LEDout<= "11000000";    -- '0'
 			when "0001"=>LEDout<= "11111001";    -- '1'
 			when "0010"=>LEDout<= "10100100";    -- '2'
@@ -113,6 +112,21 @@ begin
 			when "1111"=>LEDout<= "10001110";    -- 'f'
 			when others=>LEDout<= "XXXXXXXX";    -- ' '
 		end case;
+	end process;
+	
+	LED8_UPDATE : process (Reset, Period_S)
+		variable CurrentLED : integer range 0 to 3;
+	begin
+		if( pulse = '1' ) then
+			DIGITindex <= "0001";
+			Symbol <= "1111";
+		elsif( pulse = '0' )then
+			DIGITindex <= "0000";
+		end if;
+		
+		--DIGITindex <= "0010";
+		--Symbol <= "0011";
+		
 	end process;
 	
 end Behavioral;

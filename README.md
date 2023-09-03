@@ -8,5 +8,4 @@ tools:
 
 
 Peripherals to work with (/assets/Datasheets):
- ![modules_to_work_with_1](/assets_global/module_boards/_Periphery_1.jpg)
- ![modules_to_work_with_2](/assets_global/module_boards/_Periphery_2.jpg)
+ ![modules_to_work_with_1](/assets_global/module_boards/_Periphery.jpg)
