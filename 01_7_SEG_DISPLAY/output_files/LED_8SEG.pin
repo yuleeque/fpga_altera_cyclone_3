@@ -211,9 +211,9 @@ VCCINT                       : 140       : power  :                   : 1.2V    
 GND                          : 141       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 142       :        :                   :         : 5         :                
 LEDout[4]                    : 143       : output : 2.5 V             :         : 5         : Y              
-DIGITindex[3]                : 144       : output : 2.5 V             :         : 5         : Y              
+DIGITindex[0]                : 144       : output : 2.5 V             :         : 5         : Y              
 LEDout[3]                    : 145       : output : 2.5 V             :         : 5         : Y              
-DIGITindex[2]                : 146       : output : 2.5 V             :         : 5         : Y              
+DIGITindex[1]                : 146       : output : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 147       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 148       :        :                   :         : 5         :                
 GND+                         : 149       :        :                   :         : 5         :                
@@ -227,9 +227,9 @@ GND                          : 156       : gnd    :                   :         
 MSEL1                        : 157       :        :                   :         : 6         :                
 MSEL2                        : 158       :        :                   :         : 6         :                
 LEDout[2]                    : 159       : output : 2.5 V             :         : 6         : Y              
-DIGITindex[1]                : 160       : output : 2.5 V             :         : 6         : Y              
+DIGITindex[2]                : 160       : output : 2.5 V             :         : 6         : Y              
 LEDout[1]                    : 161       : output : 2.5 V             :         : 6         : Y              
-DIGITindex[0]                : 162       : output : 2.5 V             :         : 6         : Y              
+DIGITindex[3]                : 162       : output : 2.5 V             :         : 6         : Y              
 VCCINT                       : 163       : power  :                   : 1.2V    :           :                
 LEDout[0]                    : 164       : output : 2.5 V             :         : 6         : Y              
 GND                          : 165       : gnd    :                   :         :           :                

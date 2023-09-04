@@ -40,8 +40,13 @@ begin
 
 	BLINK2 : process(Period_S, Clock)
 	begin
-		if( Period_S'event and Period_S = '1' ) then
-			pulse <= not pulse;
+		if( Period_mS'event and Period_mS = '1' ) then
+			if count = 200 then 	-- 50Mhz / 1000 -> 50mS. Then /50 -> 1mS
+				count <= 0;
+				pulse <= not pulse;
+			else
+				count <= count + 1;
+			end if;
 		end if;
 	end process;
 	led_1 <= '1';
@@ -114,20 +119,32 @@ begin
 		end case;
 	end process;
 	
-	LED8_UPDATE : process (Reset, Period_S)
-		variable CurrentLED : integer range 0 to 3;
+	
+	
+	LED8_UPDATE : process (Reset, Period_S, Period_mS, pulse)
+		variable CurrentLED : integer range 0 to 3 := 0;
 	begin
 		if( pulse = '1' ) then
+			CurrentLED := CurrentLED + 1;
 			DIGITindex <= "0001";
+			
+
 			Symbol <= "1111";
+	
+			
 		elsif( pulse = '0' )then
 			DIGITindex <= "0000";
 		end if;
+		
+	
 		
 		--DIGITindex <= "0010";
 		--Symbol <= "0011";
 		
 	end process;
+	
+	
+	
 	
 end Behavioral;
 	

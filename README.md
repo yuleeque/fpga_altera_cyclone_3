@@ -7,5 +7,5 @@ tools:
 
 
 
-Peripherals to work with (/assets/Datasheets):
- ![modules_to_work_with_1](/assets_global/module_boards/_Periphery.jpg)
+Peripherals to work with:
+ ![/assets_global/module_boards/_Periphery.jpg](/assets_global/module_boards/_Periphery.jpg)

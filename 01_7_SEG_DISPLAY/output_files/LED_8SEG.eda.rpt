@@ -1,5 +1,5 @@
 EDA Netlist Writer report for LED_8SEG
-Mon Sep 04 00:37:00 2023
+Mon Sep 04 19:50:19 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Sep 04 00:37:00 2023 ;
+; EDA Netlist Writer Status ; Successful - Mon Sep 04 19:50:19 2023 ;
 ; Revision Name             ; LED_8SEG                              ;
 ; Top-level Entity Name     ; LED_8SEG                              ;
 ; Family                    ; Cyclone III                           ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Sep 04 00:36:59 2023
+    Info: Processing started: Mon Sep 04 19:50:18 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off LED_8SEG -c LED_8SEG
 Info (204019): Generated file LED_8SEG_8_1200mv_85c_slow.vho in folder "C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_SEG_DISPLAY/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file LED_8SEG_8_1200mv_0c_slow.vho in folder "C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_SEG_DISPLAY/simulation/modelsim/" for EDA simulation tool
@@ -100,7 +100,7 @@ Info (204019): Generated file LED_8SEG_min_1200mv_0c_vhd_fast.sdo in folder "C:/
 Info (204019): Generated file LED_8SEG_vhd.sdo in folder "C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_SEG_DISPLAY/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4537 megabytes
-    Info: Processing ended: Mon Sep 04 00:37:00 2023
+    Info: Processing ended: Mon Sep 04 19:50:19 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
