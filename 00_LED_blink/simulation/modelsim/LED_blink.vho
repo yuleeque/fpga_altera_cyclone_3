@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "09/01/2023 12:24:08"
+-- DATE "03/08/2024 19:15:06"
 
 -- 
 -- Device: Altera EP3C16Q240C8 Package PQFP240
@@ -36,10 +36,10 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	LED_blink IS
     PORT (
 	clk : IN std_logic;
-	led_1 : OUT std_logic;
-	led_2 : OUT std_logic;
-	led_3 : OUT std_logic;
-	led_4 : OUT std_logic
+	led_1 : BUFFER std_logic;
+	led_2 : BUFFER std_logic;
+	led_3 : BUFFER std_logic;
+	led_4 : BUFFER std_logic
 	);
 END LED_blink;
 

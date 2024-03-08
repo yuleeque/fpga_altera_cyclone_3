@@ -26,9 +26,9 @@ clk => count[22].CLK
 clk => count[23].CLK
 clk => count[24].CLK
 clk => count[25].CLK
-led_1 <= pulse.DB_MAX_OUTPUT_PORT_TYPE
-led_2 <= pulse.DB_MAX_OUTPUT_PORT_TYPE
-led_3 <= pulse.DB_MAX_OUTPUT_PORT_TYPE
-led_4 <= pulse.DB_MAX_OUTPUT_PORT_TYPE
+led_1 << pulse.DB_MAX_OUTPUT_PORT_TYPE
+led_2 << pulse.DB_MAX_OUTPUT_PORT_TYPE
+led_3 << pulse.DB_MAX_OUTPUT_PORT_TYPE
+led_4 << pulse.DB_MAX_OUTPUT_PORT_TYPE
 
 

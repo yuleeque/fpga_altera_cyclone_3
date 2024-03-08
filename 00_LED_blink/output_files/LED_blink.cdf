@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16Q240) Path("C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/00_LED_blink_VHDL/output_files/") File("LED_blink.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16Q240) Path("C:/Users/yulia/Documents/GitHub/fpga_altera_cyclone_3/00_LED_blink/output_files/") File("LED_blink.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -1,6 +1,6 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/00_LED_blink_VHDL/LED_blink.vhd
-source_file = 1, C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/00_LED_blink_VHDL/db/LED_blink.cbx.xml
+source_file = 1, C:/Users/yulia/Documents/GitHub/fpga_altera_cyclone_3/00_LED_blink/LED_blink.vhd
+source_file = 1, C:/Users/yulia/Documents/GitHub/fpga_altera_cyclone_3/00_LED_blink/db/LED_blink.cbx.xml
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
