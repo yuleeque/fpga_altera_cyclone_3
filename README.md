@@ -6,4 +6,4 @@ software:
     ModelSim ALTERA STARTER EDITION 10.1d
 
 modules:
-![docs/module_boards/_Periphery.jpg](/assets_global/module_boards/_Periphery.jpg)
+![/docs/module_boards/_Periphery.jpg](/assets_global/module_boards/_Periphery.jpg)
