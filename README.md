@@ -9,4 +9,5 @@ tools:
 
 
 Peripherals to work with:
- ![/docs/module_boards/_Periphery.jpg](/assets_global/module_boards/_Periphery.jpg)
+
+![/docs/module_boards/_Periphery.jpg](/assets_global/module_boards/_Periphery.jpg)
