@@ -3,23 +3,23 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'Period_mS'
-Slack : -2.870
-TNS   : -57.823
+Slack : -2.851
+TNS   : -55.187
 
 Type  : Slow 1200mV 85C Model Setup 'Period_uS'
 Slack : -2.577
 TNS   : -24.450
 
 Type  : Slow 1200mV 85C Model Setup 'Clock'
-Slack : -2.036
-TNS   : -11.012
+Slack : -2.035
+TNS   : -10.958
 
 Type  : Slow 1200mV 85C Model Hold 'Clock'
-Slack : 0.098
+Slack : 0.116
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Period_mS'
-Slack : 0.436
+Slack : 0.437
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Period_uS'
@@ -39,23 +39,23 @@ Slack : -1.487
 TNS   : -16.357
 
 Type  : Slow 1200mV 0C Model Setup 'Period_mS'
-Slack : -2.511
-TNS   : -49.828
+Slack : -2.628
+TNS   : -47.167
 
 Type  : Slow 1200mV 0C Model Setup 'Period_uS'
 Slack : -2.290
 TNS   : -21.947
 
 Type  : Slow 1200mV 0C Model Setup 'Clock'
-Slack : -1.783
-TNS   : -9.430
+Slack : -1.784
+TNS   : -9.379
 
 Type  : Slow 1200mV 0C Model Hold 'Clock'
-Slack : 0.186
+Slack : 0.185
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Period_mS'
-Slack : 0.386
+Slack : 0.385
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Period_uS'
@@ -75,20 +75,20 @@ Slack : -1.487
 TNS   : -16.357
 
 Type  : Fast 1200mV 0C Model Setup 'Period_mS'
-Slack : -0.709
-TNS   : -10.187
+Slack : -0.634
+TNS   : -9.072
 
 Type  : Fast 1200mV 0C Model Setup 'Period_uS'
 Slack : -0.513
 TNS   : -4.236
 
 Type  : Fast 1200mV 0C Model Setup 'Clock'
-Slack : -0.300
-TNS   : -0.807
+Slack : -0.301
+TNS   : -0.818
 
 Type  : Fast 1200mV 0C Model Hold 'Clock'
-Slack : -0.145
-TNS   : -0.145
+Slack : -0.112
+TNS   : -0.112
 
 Type  : Fast 1200mV 0C Model Hold 'Period_mS'
 Slack : 0.180

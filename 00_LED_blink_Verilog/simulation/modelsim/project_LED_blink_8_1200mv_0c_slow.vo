@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "08/20/2023 20:04:00"
+// DATE "03/08/2024 20:28:29"
 
 // 
 // Device: Altera EP3C16Q240C8 Package PQFP240
@@ -29,9 +29,9 @@
 `timescale 1 ps/ 1 ps
 
 module project_LED_blink (
-	CLOCK_50,
+	i_CLK,
 	o_LED);
-input 	CLOCK_50;
+input 	i_CLK;
 output 	[3:0] o_LED;
 
 // Design Ports Information
@@ -39,7 +39,7 @@ output 	[3:0] o_LED;
 // o_LED[1]	=>  Location: PIN_100,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // o_LED[2]	=>  Location: PIN_98,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // o_LED[3]	=>  Location: PIN_93,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CLOCK_50	=>  Location: PIN_34,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// i_CLK	=>  Location: PIN_92,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -61,7 +61,9 @@ wire \o_LED[0]~output_o ;
 wire \o_LED[1]~output_o ;
 wire \o_LED[2]~output_o ;
 wire \o_LED[3]~output_o ;
-wire \CLOCK_50~input_o ;
+wire \i_CLK~input_o ;
+wire \i_CLK~inputclkctrl_outclk ;
+wire \state[1]~feeder_combout ;
 wire \state[3]~feeder_combout ;
 wire [3:0] state;
 
@@ -81,7 +83,7 @@ defparam \o_LED[0]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X26_Y0_N16
 cycloneiii_io_obuf \o_LED[1]~output (
-	.i(vcc),
+	.i(state[1]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -118,17 +120,66 @@ defparam \o_LED[3]~output .bus_hold = "false";
 defparam \o_LED[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X0_Y14_N22
-cycloneiii_io_ibuf \CLOCK_50~input (
-	.i(CLOCK_50),
+// Location: IOIBUF_X21_Y0_N1
+cycloneiii_io_ibuf \i_CLK~input (
+	.i(i_CLK),
 	.ibar(gnd),
-	.o(\CLOCK_50~input_o ));
+	.o(\i_CLK~input_o ));
 // synopsys translate_off
-defparam \CLOCK_50~input .bus_hold = "false";
-defparam \CLOCK_50~input .simulate_z_as = "z";
+defparam \i_CLK~input .bus_hold = "false";
+defparam \i_CLK~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X7_Y7_N8
+// Location: CLKCTRL_G19
+cycloneiii_clkctrl \i_CLK~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\i_CLK~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\i_CLK~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \i_CLK~inputclkctrl .clock_type = "global clock";
+defparam \i_CLK~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X8_Y3_N24
+cycloneiii_lcell_comb \state[1]~feeder (
+// Equation(s):
+// \state[1]~feeder_combout  = VCC
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\state[1]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \state[1]~feeder .lut_mask = 16'hFFFF;
+defparam \state[1]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X8_Y3_N25
+dffeas \state[1] (
+	.clk(\i_CLK~inputclkctrl_outclk ),
+	.d(\state[1]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(state[1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state[1] .is_wysiwyg = "true";
+defparam \state[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y1_N24
 cycloneiii_lcell_comb \state[3]~feeder (
 // Equation(s):
 // \state[3]~feeder_combout  = VCC
@@ -145,9 +196,9 @@ defparam \state[3]~feeder .lut_mask = 16'hFFFF;
 defparam \state[3]~feeder .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X7_Y7_N9
+// Location: FF_X28_Y1_N25
 dffeas \state[3] (
-	.clk(\CLOCK_50~input_o ),
+	.clk(\i_CLK~inputclkctrl_outclk ),
 	.d(\state[3]~feeder_combout ),
 	.asdata(vcc),
 	.clrn(vcc),

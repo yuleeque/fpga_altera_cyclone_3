@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16Q240) Path("C:/Users/yulian/Documents/GitHub_repositories/fpga_altera_cyclone_3/01_7_SEG_DISPLAY/output_files/") File("LED_8SEG.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16Q240) Path("C:/Users/yulia/Documents/GitHub/fpga_altera_cyclone_3/01_7_seg_display/output_files/") File("LED_8SEG.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -101,7 +101,7 @@ nCE                          : 30        :        :                   :         
 GND+                         : 31        :        :                   :         : 1         :                
 GND+                         : 32        :        :                   :         : 1         :                
 GND+                         : 33        :        :                   :         : 2         :                
-CLOCK_50                     : 34        : input  : 2.5 V             :         : 2         : Y              
+GND+                         : 34        :        :                   :         : 2         :                
 VCCIO2                       : 35        : power  :                   : 2.5V    : 2         :                
 GND                          : 36        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 37        :        :                   :         : 2         :                
@@ -159,7 +159,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 88        :        :                   :      
 GND+                         : 89        :        :                   :         : 3         :                
 GND+                         : 90        :        :                   :         : 3         :                
 GND+                         : 91        :        :                   :         : 4         :                
-GND+                         : 92        :        :                   :         : 4         :                
+i_CLK                        : 92        : input  : 2.5 V             :         : 4         : N              
 o_LED[3]                     : 93        : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 94        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 95        :        :                   :         : 4         :                

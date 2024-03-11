@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for project_LED_blink
-Sun Aug 20 20:03:58 2023
+Fri Mar 08 20:28:27 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -17,7 +17,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   9. Slow 1200mV 85C Model Recovery Summary
  10. Slow 1200mV 85C Model Removal Summary
  11. Slow 1200mV 85C Model Minimum Pulse Width Summary
- 12. Slow 1200mV 85C Model Minimum Pulse Width: 'CLOCK_50'
+ 12. Slow 1200mV 85C Model Minimum Pulse Width: 'i_CLK'
  13. Clock to Output Times
  14. Minimum Clock to Output Times
  15. Slow 1200mV 85C Model Metastability Report
@@ -27,7 +27,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  19. Slow 1200mV 0C Model Recovery Summary
  20. Slow 1200mV 0C Model Removal Summary
  21. Slow 1200mV 0C Model Minimum Pulse Width Summary
- 22. Slow 1200mV 0C Model Minimum Pulse Width: 'CLOCK_50'
+ 22. Slow 1200mV 0C Model Minimum Pulse Width: 'i_CLK'
  23. Clock to Output Times
  24. Minimum Clock to Output Times
  25. Slow 1200mV 0C Model Metastability Report
@@ -36,7 +36,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  28. Fast 1200mV 0C Model Recovery Summary
  29. Fast 1200mV 0C Model Removal Summary
  30. Fast 1200mV 0C Model Minimum Pulse Width Summary
- 31. Fast 1200mV 0C Model Minimum Pulse Width: 'CLOCK_50'
+ 31. Fast 1200mV 0C Model Minimum Pulse Width: 'i_CLK'
  32. Clock to Output Times
  33. Minimum Clock to Output Times
  34. Fast 1200mV 0C Model Metastability Report
@@ -98,13 +98,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                               ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
-; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
-; CLOCK_50   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 } ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; i_CLK      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { i_CLK } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
 
 
 --------------------------------------
@@ -145,29 +145,38 @@ No paths to report.
 
 +---------------------------------------------------+
 ; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
-+----------+--------+-------------------------------+
-; Clock    ; Slack  ; End Point TNS                 ;
-+----------+--------+-------------------------------+
-; CLOCK_50 ; -3.000 ; -4.487                        ;
-+----------+--------+-------------------------------+
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; i_CLK ; -3.000 ; -5.974                           ;
++-------+--------+----------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Minimum Pulse Width: 'CLOCK_50'                                                ;
-+--------+--------------+----------------+------------------+----------+------------+------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target           ;
-+--------+--------------+----------------+------------------+----------+------------+------------------+
-; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; CLOCK_50 ; Rise       ; CLOCK_50         ;
-; -1.487 ; 1.000        ; 2.487          ; Min Period       ; CLOCK_50 ; Rise       ; state[3]         ;
-; 0.176  ; 0.364        ; 0.188          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; state[3]         ;
-; 0.315  ; 0.315        ; 0.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; state[3]|clk     ;
-; 0.410  ; 0.630        ; 0.220          ; High Pulse Width ; CLOCK_50 ; Rise       ; state[3]         ;
-; 0.462  ; 0.462        ; 0.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; CLOCK_50~input|o ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; CLOCK_50~input|i ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; CLOCK_50~input|i ;
-; 0.538  ; 0.538        ; 0.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; CLOCK_50~input|o ;
-; 0.678  ; 0.678        ; 0.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; state[3]|clk     ;
-+--------+--------------+----------------+------------------+----------+------------+------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'i_CLK'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                      ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; i_CLK ; Rise       ; i_CLK                       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; i_CLK ; Rise       ; state[1]                    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; i_CLK ; Rise       ; state[3]                    ;
+; 0.263  ; 0.483        ; 0.220          ; High Pulse Width ; i_CLK ; Rise       ; state[1]                    ;
+; 0.268  ; 0.488        ; 0.220          ; High Pulse Width ; i_CLK ; Rise       ; state[3]                    ;
+; 0.323  ; 0.511        ; 0.188          ; Low Pulse Width  ; i_CLK ; Rise       ; state[3]                    ;
+; 0.328  ; 0.516        ; 0.188          ; Low Pulse Width  ; i_CLK ; Rise       ; state[1]                    ;
+; 0.455  ; 0.455        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~input|o               ;
+; 0.463  ; 0.463        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; state[3]|clk                ;
+; 0.466  ; 0.466        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~inputclkctrl|inclk[0] ;
+; 0.466  ; 0.466        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~inputclkctrl|outclk   ;
+; 0.468  ; 0.468        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; state[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~input|i               ;
+; 0.532  ; 0.532        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; state[1]|clk                ;
+; 0.534  ; 0.534        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~inputclkctrl|inclk[0] ;
+; 0.534  ; 0.534        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~inputclkctrl|outclk   ;
+; 0.537  ; 0.537        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; state[3]|clk                ;
+; 0.545  ; 0.545        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~input|o               ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
 
 
 +-----------------------------------------------------------------------+
@@ -175,8 +184,9 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; o_LED[*]  ; CLOCK_50   ; 7.760 ; 7.899 ; Rise       ; CLOCK_50        ;
-;  o_LED[3] ; CLOCK_50   ; 7.760 ; 7.899 ; Rise       ; CLOCK_50        ;
+; o_LED[*]  ; i_CLK      ; 7.718 ; 7.556 ; Rise       ; i_CLK           ;
+;  o_LED[1] ; i_CLK      ; 7.718 ; 7.556 ; Rise       ; i_CLK           ;
+;  o_LED[3] ; i_CLK      ; 6.679 ; 6.852 ; Rise       ; i_CLK           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -185,8 +195,9 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; o_LED[*]  ; CLOCK_50   ; 7.575 ; 7.711 ; Rise       ; CLOCK_50        ;
-;  o_LED[3] ; CLOCK_50   ; 7.575 ; 7.711 ; Rise       ; CLOCK_50        ;
+; o_LED[*]  ; i_CLK      ; 6.535 ; 6.703 ; Rise       ; i_CLK           ;
+;  o_LED[1] ; i_CLK      ; 7.535 ; 7.376 ; Rise       ; i_CLK           ;
+;  o_LED[3] ; i_CLK      ; 6.535 ; 6.703 ; Rise       ; i_CLK           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -228,29 +239,38 @@ No paths to report.
 
 +--------------------------------------------------+
 ; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
-+----------+--------+------------------------------+
-; Clock    ; Slack  ; End Point TNS                ;
-+----------+--------+------------------------------+
-; CLOCK_50 ; -3.000 ; -4.487                       ;
-+----------+--------+------------------------------+
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; i_CLK ; -3.000 ; -5.974                          ;
++-------+--------+---------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Minimum Pulse Width: 'CLOCK_50'                                                 ;
-+--------+--------------+----------------+------------------+----------+------------+------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target           ;
-+--------+--------------+----------------+------------------+----------+------------+------------------+
-; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; CLOCK_50 ; Rise       ; CLOCK_50         ;
-; -1.487 ; 1.000        ; 2.487          ; Min Period       ; CLOCK_50 ; Rise       ; state[3]         ;
-; 0.101  ; 0.285        ; 0.184          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; state[3]         ;
-; 0.231  ; 0.231        ; 0.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; state[3]|clk     ;
-; 0.462  ; 0.462        ; 0.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; CLOCK_50~input|o ;
-; 0.493  ; 0.709        ; 0.216          ; High Pulse Width ; CLOCK_50 ; Rise       ; state[3]         ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; CLOCK_50~input|i ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; CLOCK_50~input|i ;
-; 0.538  ; 0.538        ; 0.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; CLOCK_50~input|o ;
-; 0.760  ; 0.760        ; 0.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; state[3]|clk     ;
-+--------+--------------+----------------+------------------+----------+------------+------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'i_CLK'                                                            ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                      ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; i_CLK ; Rise       ; i_CLK                       ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; i_CLK ; Rise       ; state[1]                    ;
+; -1.487 ; 1.000        ; 2.487          ; Min Period       ; i_CLK ; Rise       ; state[3]                    ;
+; 0.272  ; 0.488        ; 0.216          ; High Pulse Width ; i_CLK ; Rise       ; state[3]                    ;
+; 0.273  ; 0.489        ; 0.216          ; High Pulse Width ; i_CLK ; Rise       ; state[1]                    ;
+; 0.324  ; 0.508        ; 0.184          ; Low Pulse Width  ; i_CLK ; Rise       ; state[1]                    ;
+; 0.325  ; 0.509        ; 0.184          ; Low Pulse Width  ; i_CLK ; Rise       ; state[3]                    ;
+; 0.455  ; 0.455        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~input|o               ;
+; 0.457  ; 0.457        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; state[1]|clk                ;
+; 0.458  ; 0.458        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~inputclkctrl|inclk[0] ;
+; 0.458  ; 0.458        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~inputclkctrl|outclk   ;
+; 0.458  ; 0.458        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; state[3]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~input|i               ;
+; 0.542  ; 0.542        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~inputclkctrl|inclk[0] ;
+; 0.542  ; 0.542        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~inputclkctrl|outclk   ;
+; 0.542  ; 0.542        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; state[3]|clk                ;
+; 0.543  ; 0.543        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; state[1]|clk                ;
+; 0.545  ; 0.545        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~input|o               ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
 
 
 +-----------------------------------------------------------------------+
@@ -258,8 +278,9 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; o_LED[*]  ; CLOCK_50   ; 7.363 ; 7.592 ; Rise       ; CLOCK_50        ;
-;  o_LED[3] ; CLOCK_50   ; 7.363 ; 7.592 ; Rise       ; CLOCK_50        ;
+; o_LED[*]  ; i_CLK      ; 7.402 ; 7.115 ; Rise       ; i_CLK           ;
+;  o_LED[1] ; i_CLK      ; 7.402 ; 7.115 ; Rise       ; i_CLK           ;
+;  o_LED[3] ; i_CLK      ; 6.332 ; 6.583 ; Rise       ; i_CLK           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -268,8 +289,9 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; o_LED[*]  ; CLOCK_50   ; 7.195 ; 7.418 ; Rise       ; CLOCK_50        ;
-;  o_LED[3] ; CLOCK_50   ; 7.195 ; 7.418 ; Rise       ; CLOCK_50        ;
+; o_LED[*]  ; i_CLK      ; 6.203 ; 6.447 ; Rise       ; i_CLK           ;
+;  o_LED[1] ; i_CLK      ; 7.234 ; 6.955 ; Rise       ; i_CLK           ;
+;  o_LED[3] ; i_CLK      ; 6.203 ; 6.447 ; Rise       ; i_CLK           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -305,29 +327,38 @@ No paths to report.
 
 +--------------------------------------------------+
 ; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
-+----------+--------+------------------------------+
-; Clock    ; Slack  ; End Point TNS                ;
-+----------+--------+------------------------------+
-; CLOCK_50 ; -3.000 ; -4.000                       ;
-+----------+--------+------------------------------+
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; i_CLK ; -3.000 ; -5.111                          ;
++-------+--------+---------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Minimum Pulse Width: 'CLOCK_50'                                                 ;
-+--------+--------------+----------------+------------------+----------+------------+------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target           ;
-+--------+--------------+----------------+------------------+----------+------------+------------------+
-; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; CLOCK_50 ; Rise       ; CLOCK_50         ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; CLOCK_50 ; Rise       ; state[3]         ;
-; 0.007  ; 0.191        ; 0.184          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; state[3]         ;
-; 0.118  ; 0.118        ; 0.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; CLOCK_50~input|o ;
-; 0.185  ; 0.185        ; 0.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; state[3]|clk     ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; CLOCK_50~input|i ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; CLOCK_50~input|i ;
-; 0.592  ; 0.808        ; 0.216          ; High Pulse Width ; CLOCK_50 ; Rise       ; state[3]         ;
-; 0.812  ; 0.812        ; 0.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; state[3]|clk     ;
-; 0.882  ; 0.882        ; 0.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; CLOCK_50~input|o ;
-+--------+--------------+----------------+------------------+----------+------------+------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'i_CLK'                                                            ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                      ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; i_CLK ; Rise       ; i_CLK                       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; i_CLK ; Rise       ; state[1]                    ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; i_CLK ; Rise       ; state[3]                    ;
+; -0.056 ; 0.128        ; 0.184          ; Low Pulse Width  ; i_CLK ; Rise       ; state[1]                    ;
+; -0.055 ; 0.129        ; 0.184          ; Low Pulse Width  ; i_CLK ; Rise       ; state[3]                    ;
+; 0.118  ; 0.118        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~input|o               ;
+; 0.123  ; 0.123        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; state[3]|clk                ;
+; 0.124  ; 0.124        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; state[1]|clk                ;
+; 0.132  ; 0.132        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~inputclkctrl|inclk[0] ;
+; 0.132  ; 0.132        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~inputclkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; i_CLK ; Rise       ; i_CLK~input|i               ;
+; 0.654  ; 0.870        ; 0.216          ; High Pulse Width ; i_CLK ; Rise       ; state[1]                    ;
+; 0.655  ; 0.871        ; 0.216          ; High Pulse Width ; i_CLK ; Rise       ; state[3]                    ;
+; 0.867  ; 0.867        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~inputclkctrl|inclk[0] ;
+; 0.867  ; 0.867        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~inputclkctrl|outclk   ;
+; 0.875  ; 0.875        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; state[3]|clk                ;
+; 0.876  ; 0.876        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; state[1]|clk                ;
+; 0.882  ; 0.882        ; 0.000          ; High Pulse Width ; i_CLK ; Rise       ; i_CLK~input|o               ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
 
 
 +-----------------------------------------------------------------------+
@@ -335,8 +366,9 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; o_LED[*]  ; CLOCK_50   ; 3.870 ; 3.754 ; Rise       ; CLOCK_50        ;
-;  o_LED[3] ; CLOCK_50   ; 3.870 ; 3.754 ; Rise       ; CLOCK_50        ;
+; o_LED[*]  ; i_CLK      ; 3.655 ; 3.778 ; Rise       ; i_CLK           ;
+;  o_LED[1] ; i_CLK      ; 3.655 ; 3.778 ; Rise       ; i_CLK           ;
+;  o_LED[3] ; i_CLK      ; 3.311 ; 3.263 ; Rise       ; i_CLK           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -345,8 +377,9 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; o_LED[*]  ; CLOCK_50   ; 3.780 ; 3.669 ; Rise       ; CLOCK_50        ;
-;  o_LED[3] ; CLOCK_50   ; 3.780 ; 3.669 ; Rise       ; CLOCK_50        ;
+; o_LED[*]  ; i_CLK      ; 3.241 ; 3.196 ; Rise       ; i_CLK           ;
+;  o_LED[1] ; i_CLK      ; 3.573 ; 3.691 ; Rise       ; i_CLK           ;
+;  o_LED[3] ; i_CLK      ; 3.241 ; 3.196 ; Rise       ; i_CLK           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -362,9 +395,9 @@ No synchronizer chains to report.
 ; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+------+----------+---------+---------------------+
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -3.000              ;
-;  CLOCK_50        ; N/A   ; N/A  ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -4.487              ;
-;  CLOCK_50        ; N/A   ; N/A  ; N/A      ; N/A     ; -4.487              ;
+;  i_CLK           ; N/A   ; N/A  ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -5.974              ;
+;  i_CLK           ; N/A   ; N/A  ; N/A      ; N/A     ; -5.974              ;
 +------------------+-------+------+----------+---------+---------------------+
 
 
@@ -373,8 +406,9 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; o_LED[*]  ; CLOCK_50   ; 7.760 ; 7.899 ; Rise       ; CLOCK_50        ;
-;  o_LED[3] ; CLOCK_50   ; 7.760 ; 7.899 ; Rise       ; CLOCK_50        ;
+; o_LED[*]  ; i_CLK      ; 7.718 ; 7.556 ; Rise       ; i_CLK           ;
+;  o_LED[1] ; i_CLK      ; 7.718 ; 7.556 ; Rise       ; i_CLK           ;
+;  o_LED[3] ; i_CLK      ; 6.679 ; 6.852 ; Rise       ; i_CLK           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -383,8 +417,9 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; o_LED[*]  ; CLOCK_50   ; 3.780 ; 3.669 ; Rise       ; CLOCK_50        ;
-;  o_LED[3] ; CLOCK_50   ; 3.780 ; 3.669 ; Rise       ; CLOCK_50        ;
+; o_LED[*]  ; i_CLK      ; 3.241 ; 3.196 ; Rise       ; i_CLK           ;
+;  o_LED[1] ; i_CLK      ; 3.573 ; 3.691 ; Rise       ; i_CLK           ;
+;  o_LED[3] ; i_CLK      ; 3.241 ; 3.196 ; Rise       ; i_CLK           ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -407,7 +442,7 @@ No synchronizer chains to report.
 +-------------------------+--------------+-----------------+-----------------+
 ; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-------------------------+--------------+-----------------+-----------------+
-; CLOCK_50                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; i_CLK                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -469,8 +504,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 0     ; 0    ;
 ; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 1     ; 1    ;
-; Unconstrained Output Port Paths ; 1     ; 1    ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 2     ; 2    ;
 +---------------------------------+-------+------+
 
 
@@ -480,7 +515,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Aug 20 20:03:56 2023
+    Info: Processing started: Fri Mar 08 20:28:25 2024
 Info: Command: quartus_sta project_LED_blink -c project_LED_blink
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -490,7 +525,7 @@ Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'project_LED_blink.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
+    Info (332105): create_clock -period 1.000 -name i_CLK i_CLK
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
@@ -505,7 +540,7 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -4.487 CLOCK_50 
+    Info (332119):    -3.000              -5.974 i_CLK 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -520,7 +555,7 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -4.487 CLOCK_50 
+    Info (332119):    -3.000              -5.974 i_CLK 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332140): No Setup paths to report
@@ -532,13 +567,13 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -4.000 CLOCK_50 
+    Info (332119):    -3.000              -5.111 i_CLK 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4612 megabytes
-    Info: Processing ended: Sun Aug 20 20:03:58 2023
+    Info: Peak virtual memory: 4613 megabytes
+    Info: Processing ended: Fri Mar 08 20:28:27 2024
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

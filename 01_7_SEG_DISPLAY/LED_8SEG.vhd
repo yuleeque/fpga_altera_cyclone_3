@@ -124,16 +124,19 @@ begin
 	LED8_UPDATE : process (Reset, Period_S, Period_mS, pulse)
 		variable CurrentLED : integer range 0 to 3 := 0;
 	begin
+		
 		if( pulse = '1' ) then
-			CurrentLED := CurrentLED + 1;
-			DIGITindex <= "0001";
 			
-
-			Symbol <= "1111";
-	
+			DIGITindex <= "0001";
+			Symbol <= "0000";			
+		
+			
 			
 		elsif( pulse = '0' )then
-			DIGITindex <= "0000";
+			
+			
+			DIGITindex <= "0010";
+			--Symbol <= "0001";
 		end if;
 		
 	

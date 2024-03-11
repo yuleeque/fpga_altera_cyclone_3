@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "project_LED_blink")
-  (DATE "08/20/2023 20:04:00")
+  (DATE "03/08/2024 20:28:29")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition")
@@ -38,21 +38,54 @@
 
   (CELL
     (CELLTYPE "cycloneiii_io_obuf")
+    (INSTANCE o_LED\[1\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (1971:1971:1971) (1885:1885:1885))
+        (IOPATH i o (2502:2502:2502) (2426:2426:2426))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_io_obuf")
     (INSTANCE o_LED\[3\]\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (1956:1956:1956) (2019:2019:2019))
+        (PORT i (1009:1009:1009) (1106:1106:1106))
         (IOPATH i o (2426:2426:2426) (2502:2502:2502))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneiii_io_ibuf")
-    (INSTANCE CLOCK_50\~input)
+    (INSTANCE i_CLK\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (990:990:990) (1028:1028:1028))
+        (IOPATH i o (939:939:939) (984:984:984))
       )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_clkctrl")
+    (INSTANCE i_CLK\~inputclkctrl)
+    (DELAY
+      (ABSOLUTE
+        (PORT inclk[0] (200:200:200) (189:189:189))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE state\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1845:1845:1845) (1856:1856:1856))
+        (PORT d (99:99:99) (115:115:115))
+        (IOPATH (posedge clk) q (261:261:261) (261:261:261))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (212:212:212))
     )
   )
   (CELL
@@ -60,7 +93,7 @@
     (INSTANCE state\[3\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (2127:2127:2127) (2287:2287:2287))
+        (PORT clk (1844:1844:1844) (1860:1860:1860))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )

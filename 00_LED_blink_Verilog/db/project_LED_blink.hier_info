@@ -1,8 +1,8 @@
 |project_LED_blink
-CLOCK_50 => state[0].CLK
-CLOCK_50 => state[1].CLK
-CLOCK_50 => state[2].CLK
-CLOCK_50 => state[3].CLK
+i_CLK => state[0].CLK
+i_CLK => state[1].CLK
+i_CLK => state[2].CLK
+i_CLK => state[3].CLK
 o_LED[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 o_LED[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
 o_LED[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE

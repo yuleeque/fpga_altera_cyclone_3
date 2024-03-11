@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "03/08/2024 19:15:06"
+-- DATE "03/08/2024 20:24:26"
 
 -- 
 -- Device: Altera EP3C16Q240C8 Package PQFP240
