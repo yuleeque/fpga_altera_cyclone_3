@@ -6,10 +6,10 @@ Clock => \TIMING:Count_uS[2].CLK
 Clock => \TIMING:Count_uS[3].CLK
 Clock => \TIMING:Count_uS[4].CLK
 Clock => \TIMING:Count_uS[5].CLK
-led_1 <= <VCC>
-led_2 <= <VCC>
-led_3 <= <VCC>
-led_4 <= <VCC>
+led_1 << <VCC>
+led_2 << <VCC>
+led_3 << <VCC>
+led_4 << <VCC>
 Reset => \TIMING:Count_uS[0].ACLR
 Reset => \TIMING:Count_uS[1].ACLR
 Reset => \TIMING:Count_uS[2].ACLR
@@ -17,17 +17,17 @@ Reset => \TIMING:Count_uS[3].ACLR
 Reset => \TIMING:Count_uS[4].ACLR
 Reset => \TIMING:Count_uS[5].ACLR
 Reset => Period_uS.ENA
-LEDout[0] <= <GND>
-LEDout[1] <= <GND>
-LEDout[2] <= <GND>
-LEDout[3] <= <GND>
-LEDout[4] <= <GND>
-LEDout[5] <= <GND>
-LEDout[6] <= <VCC>
-LEDout[7] <= <VCC>
-DIGITindex[0] <= pulse.DB_MAX_OUTPUT_PORT_TYPE
-DIGITindex[1] <= pulse.DB_MAX_OUTPUT_PORT_TYPE
-DIGITindex[2] <= <GND>
-DIGITindex[3] <= <GND>
+LEDout[0] << <GND>
+LEDout[1] << <GND>
+LEDout[2] << <GND>
+LEDout[3] << <GND>
+LEDout[4] << <GND>
+LEDout[5] << <GND>
+LEDout[6] << <VCC>
+LEDout[7] << <VCC>
+DIGITindex[0] << pulse.DB_MAX_OUTPUT_PORT_TYPE
+DIGITindex[1] << pulse.DB_MAX_OUTPUT_PORT_TYPE
+DIGITindex[2] << <GND>
+DIGITindex[3] << <GND>
 
 
