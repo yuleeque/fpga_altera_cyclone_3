@@ -1,5 +1,5 @@
 Flow report for LED_blink
-Fri Mar 08 20:24:26 2024
+Mon Sep 09 16:00:48 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Mar 08 20:24:26 2024      ;
+; Flow Status                        ; Successful - Mon Sep 09 16:00:48 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; LED_blink                                  ;
 ; Top-level Entity Name              ; LED_blink                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/08/2024 20:24:08 ;
+; Start date & time ; 09/09/2024 16:00:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LED_blink           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 158445885609747.170992584804760 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 158445885609747.172589043107604 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -93,26 +93,26 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4646 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 4961 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4573 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4618 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4526 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:10                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4687 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 5338 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4589 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4681 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-0F2996C  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-0F2996C  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-0F2996C  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-0F2996C  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-0F2996C  ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                          ;
++---------------------------+--------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname   ; OS Name   ; OS Version ; Processor type ;
++---------------------------+--------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; CABERNET-SAUVIGNON ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; CABERNET-SAUVIGNON ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; CABERNET-SAUVIGNON ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; CABERNET-SAUVIGNON ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; CABERNET-SAUVIGNON ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+--------------------+-----------+------------+----------------+
 
 
 ------------
