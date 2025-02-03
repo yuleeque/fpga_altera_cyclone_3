@@ -1,0 +1,19 @@
+|Counter4Bit
+clk => counter_value[0].CLK
+clk => counter_value[1].CLK
+clk => counter_value[2].CLK
+clk => counter_value[3].CLK
+rst => counter_value.OUTPUTSELECT
+rst => counter_value.OUTPUTSELECT
+rst => counter_value.OUTPUTSELECT
+rst => counter_value.OUTPUTSELECT
+en => counter_value.OUTPUTSELECT
+en => counter_value.OUTPUTSELECT
+en => counter_value.OUTPUTSELECT
+en => counter_value.OUTPUTSELECT
+count[0] <= counter_value[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= counter_value[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= counter_value[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= counter_value[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
